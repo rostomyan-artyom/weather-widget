@@ -2,7 +2,7 @@
 
 Since the application does not imply the use of routing, I will do without vue-router
 
-## Add your open weather api in /src/apiConfig.js
+## Insert your open-weather-api key into /src/apiConfig.js
 
 ## Project setup
 ```
