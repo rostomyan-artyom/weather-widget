@@ -1,4 +1,8 @@
-# es-wather-widget
+# Weather-widget
+
+Since the application does not imply the use of routing, I will do without vue-router
+
+## Add your open weather api in /src/apiConfig.js
 
 ## Project setup
 ```
@@ -19,6 +23,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
