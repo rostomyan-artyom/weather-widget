@@ -16,7 +16,6 @@ export default {
     ]),
 
     async fetchAndAddWeatherForecasts(weatherLocations) {
-      console.log(weatherLocations);
       for(let weatherPositionItem of weatherLocations) {
         const weatherItem = await this.fetchWeather({
           lat: weatherPositionItem.lat,

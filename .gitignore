@@ -2,8 +2,6 @@
 node_modules
 /dist
 
-/src/apiConfig.js
-
 # local env files
 .env.local
 .env.*.local
