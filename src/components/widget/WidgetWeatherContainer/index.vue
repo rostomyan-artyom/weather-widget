@@ -3,7 +3,11 @@
     'widget-weather-container',
     { 'widget-weather-container_burger-show': burgerShow },
   ]">
-    <WidgetBurger class="widget-weather-container__burger" @hideBurger="toggleBurgerShow" />
+    <WidgetBurger
+      :weatherList="weatherListProp"
+      class="widget-weather-container__burger"
+      @hideBurger="toggleBurgerShow"
+    />
 
     <button class="widget-weather-container__burger-btn" @click="toggleBurgerShow">
       <GearIcon />
@@ -11,7 +15,7 @@
 
     <div class="widget-weather-container__list">
       <WidgetWeatherItem
-        v-for="weatherItem in weatherList"
+        v-for="weatherItem in weatherListProp"
         :key="weatherItem.id"
         :weatherData="weatherItem"
       />
@@ -33,7 +37,7 @@ export default {
   },
 
   props: {
-    weatherList: {
+    weatherListProp: {
       type: Array,
       default: () => ([]),
     },
